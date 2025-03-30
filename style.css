@@ -171,7 +171,7 @@ ul li, ol li {
     left: 0;
 }
 
-/* On hover, add a grey background color */
+/* On hover, add a black background color */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
@@ -207,11 +207,6 @@ ul li, ol li {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.0s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
 }
 
 @keyframes fade {
@@ -470,7 +465,6 @@ p { line-height: 1.6; margin-bottom: 0px; }
     }
   }
   :root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
     --primary: #0b0470;
     --primaryLight: #ffba43;
     --secondary: #ffba43;
@@ -833,10 +827,10 @@ body {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cs-contact-490 {
+    #contact {
       padding: var(--sectionPadding);
     }
-    #cs-contact-490 .cs-container {
+    #contact .cs-container {
       width: 100%;
       /* changes to 1280px at desktop */
       max-width: 34.375rem;
@@ -847,15 +841,15 @@ body {
       align-items: flex-start;
       gap: 3rem;
     }
-    #cs-contact-490 .cs-content {
+    #contact .cs-content {
       max-width: 32.625rem;
       text-align: left;
     }
-    #cs-contact-490 .cs-text {
+    #contact .cs-text {
       /* 16px - 48px */
       margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
     }
-    #cs-contact-490 .cs-header {
+    #contact .cs-header {
       /* 13px - 16px */
       font-size: clamp(0.8125rem, 1.5vw, 1rem);
       line-height: 1.2em;
@@ -866,7 +860,7 @@ body {
       color: #b4b2c7;
       display: block;
     }
-    #cs-contact-490 .cs-link {
+    #contact .cs-link {
       /* 16px - 20px */
       font-size: clamp(1rem, 2vw, 1.25rem);
       text-decoration: none;
@@ -877,20 +871,20 @@ body {
       color: var(--headerColor);
       display: block;
     }
-    #cs-contact-490 .cs-link:hover {
+    #contact .cs-link:hover {
       text-decoration: underline;
     }
-    #cs-contact-490 .cs-link:last-of-type {
+    #contact .cs-link:last-of-type {
       margin-bottom: 0;
     }
-    #cs-contact-490 .cs-social {
+    #contact .cs-social {
       /* 32px - 80px */
       margin-top: clamp(2rem, 6vw, 5rem);
       display: inline-flex;
       justify-content: flex-start;
       gap: 0.75em;
     }
-    #cs-contact-490 .cs-social-link {
+    #contact .cs-social-link {
       /* 32px - 52px */
       width: clamp(2rem, 4vw, 3.25rem);
       height: clamp(2rem, 4vw, 3.25rem);
@@ -903,17 +897,17 @@ body {
       z-index: 1;
       transition: transform 0.3s, background-color 0.3s;
     }
-    #cs-contact-490 .cs-social-link:hover {
+    #contact .cs-social-link:hover {
       background-color: var(--primary);
       transform: translateY(-0.1875rem);
     }
-    #cs-contact-490 .cs-social-img {
+    #contact .cs-social-img {
       /* 14px - 24px */
       height: clamp(0.875rem, 2vw, 1.5rem);
       width: auto;
       display: block;
     }
-    #cs-contact-490 #cs-form-490 {
+    #contact #form {
       width: 100%;
       max-width: 40.625rem;
       /* 32px - 40px */
@@ -925,7 +919,7 @@ body {
       border: 1px solid #dad9e3;
       border-radius: 1rem;
     }
-    #cs-contact-490 .cs-label {
+    #contact .cs-label {
       /* 14px - 16px */
       font-size: clamp(0.875rem, 1.3vw, 1rem);
       line-height: 1.5em;
@@ -938,12 +932,12 @@ body {
       align-items: flex-start;
       flex-direction: column;
     }
-    #cs-contact-490 .cs-label-message {
+    #contact .cs-label-message {
       /* 32px - 40px */
       margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
     }
-    #cs-contact-490 .cs-input,
-    #cs-contact-490 textarea {
+    #contact .cs-input,
+    #contact textarea {
       font-size: 1rem;
       width: 100%;
       height: 4rem;
@@ -956,21 +950,21 @@ body {
       box-sizing: border-box;
       transition: border 0.3s;
     }
-    #cs-contact-490 .cs-input:hover,
-    #cs-contact-490 textarea:hover {
+    #contact .cs-input:hover,
+    #contact textarea:hover {
       border: 1px solid var(--primary);
     }
-    #cs-contact-490 .cs-input::placeholder,
-    #cs-contact-490 textarea::placeholder {
+    #contact .cs-input::placeholder,
+    #contact textarea::placeholder {
       color: #7d799c;
     }
-    #cs-contact-490 textarea {
+    #contact textarea {
       font-family: inherit;
       margin: 0;
       padding-top: 1.25rem;
       min-height: 7.5rem;
     }
-    #cs-contact-490 .cs-button-solid {
+    #contact .cs-button-solid {
       font-size: 1rem;
       /* 46px - 56px */
       line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -990,7 +984,7 @@ body {
       /* prevents padding from adding to the width */
       box-sizing: border-box;
     }
-    #cs-contact-490 .cs-button-solid:before {
+    #contact .cs-button-solid:before {
       content: "";
       position: absolute;
       height: 100%;
@@ -1003,27 +997,27 @@ body {
       border-radius: 0.5rem;
       transition: width 0.3s;
     }
-    #cs-contact-490 .cs-button-solid:hover {
+    #contact .cs-button-solid:hover {
       cursor: pointer;
     }
-    #cs-contact-490 .cs-button-solid:hover:before {
+    #contact .cs-button-solid:hover:before {
       width: 100%;
     }
   }
   /* Tablet - 700px */
   @media only screen and (min-width: 43.75rem) {
-    #cs-contact-490 .cs-container {
+    #contact .cs-container {
       max-width: 80rem;
       flex-direction: row;
       justify-content: space-between;
     }
-    #cs-contact-490 .cs-content {
+    #contact .cs-content {
       width: 40%;
       /* pushes it to the right */
       order: 2;
       flex: none;
     }
-    #cs-contact-490 #cs-form-490 {
+    #contact #form {
       margin: 0;
     }
   }
