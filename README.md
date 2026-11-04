@@ -2,9 +2,6 @@
 
 Official corporate website for **Slope Hills Movers Limited** — specializing in heavy earthmoving equipment, lifting machinery for construction, transport support services, and specialized machinery rentals across Kenya.
 
-[![Website](https://img.shields.io/badge/Status-Live-success)](https://slopehillsmoversltm.co.ke/)
-[![Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS%20%7C%20PHP-blue)](#tech-stack)
-[![License](https://img.shields.io/badge/License-Proprietary-lightgrey)](#license)
 
 ---
 
@@ -133,3 +130,4 @@ config.php
 ## 📄 License
 
 &copy; Slope Hills Movers Limited. All rights reserved. Content, branding, and machinery imagery are proprietary to Slope Hills Movers Limited.
+# SlopeHillsMovers
