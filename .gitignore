@@ -1,0 +1,15 @@
+# Credentials and config
+wp-config.php
+config.php
+.env
+
+# Temporary and Office lock files
+~$*
+*.tmp
+
+# Server files & quota
+.ftpquota
+
+# IDE and Editor configs
+.vscode/
+.idea/
